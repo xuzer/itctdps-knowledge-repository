@@ -14,9 +14,6 @@
     ? `${baseFolder}/SOP`                  // "Application/Digipos/SOP"
     : "SOP";                               // fallback if note in root
 
-  // 4. Debug output—verify it matches your vault sidebar
-  tR += `> Debug: looking in \`${sopFolder}\`\n\n`;
-
   // 5. Grab all markdown files under that folder
   const sopFiles = app.vault.getMarkdownFiles()
     .filter(f => f.path.startsWith(sopFolder + "/"))
@@ -26,7 +23,7 @@
   if (!sopFiles.length) {
     tR += `*No SOP files found in \`${sopFolder}\`*`;
   } else {
-    tR += `# SOP Contents\n\n`;
+    tR += `### List SOP\n`;
     for (const file of sopFiles) {
       const link = app.metadataCache.fileToLinktext(file, tp.file.path(true));
       tR += `- [[${link}]]\n`;
