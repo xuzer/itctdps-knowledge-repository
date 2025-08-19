@@ -1,4 +1,9 @@
-
+##### Suspend User Outlet
+```sql
+UPDATE outlet set enabled='0', updated_at=sysdate,updated_by='8888' where outlet_id='3201053384';
+UPDATE rs_outlet set enabled='0', updated_at=sysdate,updated_by='8888' where outlet_id='3201053384';
+UPDATE "USER" set enabled='0', is_activated='0', updated_at=sysdate,updated_by='8888' where user_id in (select owner_id from dgpos.outlet where outlet_id in ('3201053384') );
+```
 ##### Insert to TEMP_INSERT_TARGET_REKON KPI Agency 
 ```sql
 INSERT INTO TEMP_INSERT_TARGET_REKON(
