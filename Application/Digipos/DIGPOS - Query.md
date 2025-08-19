@@ -1,5 +1,5 @@
 
-#### Insert to TEMP_INSERT_TARGET_REKON KPI Agency
+##### Insert to TEMP_INSERT_TARGET_REKON KPI Agency
 ```sql
 INSERT INTO TEMP_INSERT_TARGET_REKON(
   PERIOD, COMPANY_ID, BRANCH, WOK, USER_TYPE,
@@ -29,7 +29,7 @@ SELECT
   ROUND(TO_NUMBER(REPLACE(REPLACE(TARGET_RATIO_HEALTHY_5, '%', ''), ',', '.')) / 100, 4) AS TARGET_HEALTHY_5
 FROM temp_target_agency_20250819;
 ```
-#### QUERY COMPARE Qty Order DO vs DOD
+##### QUERY COMPARE Qty Order DO vs DOD
 ```sql
 select do_number, 
     SUM(CASE WHEN status = 'DO' THEN qty ELSE 0 END) AS do_qty,
@@ -47,7 +47,7 @@ WHERE A.do_number in ('DO-322000RG-202508-0089',
 GROUP BY do_number, item_code, block_from, block_to, company_code
 order by do_number;
 ```
-#### Cek trend transaksi VAS
+##### Cek trend transaksi VAS
 ```sql
 SELECT 
     to_char (created_at , 'YYYY-MM-DD') as day,
@@ -65,7 +65,7 @@ WHERE created_at BETWEEN
 GROUP BY to_char (created_at , 'YYYY-MM-DD')
 ORDER BY to_char (created_at , 'YYYY-MM-DD') ASC;
 ```
-#### Cek Trend Regular Recharge
+##### Cek Trend Regular Recharge
 ```sql
 SELECT 
     to_char (created_at , 'YYYY-MM-DD') as day,
@@ -83,7 +83,7 @@ WHERE created_at BETWEEN
 GROUP BY to_char (created_at , 'YYYY-MM-DD')
 ORDER BY to_char (created_at , 'YYYY-MM-DD') ASC;
 ```
-#### Cek Trend Transaksi ST
+##### Cek Trend Transaksi ST
 ```sql
 SELECT 
     to_char (created_at , 'YYYY-MM-DD') as day,

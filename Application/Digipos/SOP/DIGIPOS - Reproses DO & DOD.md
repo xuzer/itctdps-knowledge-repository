@@ -5,15 +5,18 @@ tags:
 application:
   - DIGIPOS
 ---
+**URL:**
 **Notes:** Untuk reproses DO & DOD memiliki unique constraint sehingga tidak akan mengalami double do.
 
 **Reproses DO**
 * file yang belum diproses harus ada di directory `/data/l2/deliveryorder/stock-parser`
 * file yang sudah ter-proses nantinya ada di directory `/data/l2/deliveryorder/stock-parser/finished-files`
 Run script reproses DO:
-```sh
+```bash
 nohup /data/l2/deliveryorder/stock-parser/process_do.sh > /data/l2/deliveryorder/stock-parser/process_do.log &
 ```
+
+---
 
 **Reproses DOD** 
 * file yang belum diproses harus ada di directory `/data/l2/deliveryorder`
@@ -23,4 +26,9 @@ nohup /data/l2/deliveryorder/stock-parser/process_do.sh > /data/l2/deliveryorder
 - Run Script reproses DOD
 ```sh
 nohup /data/l2/deliveryorder/manually_insert_do.sh > /data/l2/deliveryorder/manually_insert_do.sh &
+```
+
+#### News & Updates
+```dataview
+TABLE file.name AS "News Title", tags AS "Categories", date AS "Date" FROM "News & Updates" WHERE contains(related_sop, this.file.link) SORT date DESC
 ```
