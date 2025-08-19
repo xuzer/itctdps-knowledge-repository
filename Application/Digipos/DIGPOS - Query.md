@@ -1,5 +1,5 @@
 
-##### Insert to TEMP_INSERT_TARGET_REKON KPI Agency
+##### Insert to TEMP_INSERT_TARGET_REKON KPI Agency 
 ```sql
 INSERT INTO TEMP_INSERT_TARGET_REKON(
   PERIOD, COMPANY_ID, BRANCH, WOK, USER_TYPE,
@@ -49,7 +49,7 @@ WHERE A.do_number in (
 GROUP BY do_number, item_code, block_from, block_to, company_code
 order by do_number;
 ```
-##### Cek trend transaksi VAS
+##### Cek Trend Transaksi VAS
 ```sql
 SELECT 
     to_char (created_at , 'YYYY-MM-DD') as day,

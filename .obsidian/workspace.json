@@ -20,17 +20,17 @@
             }
           },
           {
-            "id": "aa093c05edaee08d",
+            "id": "d330217c279a9894",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Application/Digipos/Case Handling/DIGIPOS - BAU - DO Number Tidak Terload.md",
+                "file": "Application/DSC/DSC Mobile/SOP/DSC - SOP - Kendala gagal Change Ownership.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DIGIPOS - BAU - DO Number Tidak Terload"
+              "title": "DSC - SOP - Kendala gagal Change Ownership"
             }
           }
         ],
@@ -91,7 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 313.51103591918945
+    "width": 349.51103591918945
   },
   "right": {
     "id": "7b26e70e93479e25",
@@ -212,37 +212,39 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aa093c05edaee08d",
+  "active": "d330217c279a9894",
   "lastOpenFiles": [
+    "News & Updates/News - Kenaikan kendala Change Ownership pada nomor yang memiliki child number dengan indikasi pada system terbaca predictive bill.md",
+    "Application/DSC/DSC Mobile/SOP/DSC - SOP - Kendala gagal Change Ownership.md",
+    "Application/DSC/DSC Mobile/Case Handling/DSC - Case Handling - Kendala Gagal Change Ownership.md",
+    "Application/DSC/DSC Mobile/DSC Mobile - Application Overview.md",
+    "Application/DSC/DSC Mobile/SOP/DSC -  SOP - Sanity Test DSC.md",
+    "Application/Digipos/Case Handling/DIGIPOS - BAU - DO Number Tidak Terload.md",
+    "metadata/Templates/case-handling.md",
+    "Application/Digipos/SOP/DIGIPOS - SOP - Request Access User Adita.md",
+    "Application/Digipos/DIGPOS - Query.md",
+    "Application/Digipos/DIGIPOS - Application Overview.md",
+    "Application/DSC/DSC - General Knowledge.md",
+    "Application/DSC/DSC Mobile/Case Handling",
+    "News & Updates/News - Request Akses BOT Adita.md",
+    "To Do.md",
+    "metadata/Templates/Daily.md",
+    "metadata/Templates/SOP.md",
+    "metadata/Templates/News.md",
+    "News & Updates/News- DO & DOD ISP Preload.md",
+    "Application/Digipos/SOP/DIGIPOS - SOP- Reproses DO & DOD.md",
+    "Application/Digipos/SOP/DIGIPOS - SOP - Update data FMC MWA.md",
+    "Daily/Shift 1.md",
     "Application/Digipos/Activity/DIGIPOS - Activity - Housekeeping.md",
     "Application/MEPRO/MEPRO - Application Overview.md",
-    "Application/DSC/DSC Mobile/DSC Mobile - Application Overview.md",
     "Untitled.canvas",
-    "Application/DSC/DSC - General Knowledge.md",
-    "metadata/Templates/Daily.md",
-    "Application/DSC/DSC Mobile/SOP/DSC -  SOP - Sanity Test DSC.md",
     "Application/TOPUP/TopUp - Application Overview.md",
     "metadata/Templates/toc-sop-template.md",
     "Application/TOPUP/TopUp - QUERY.md",
     "Application/IWP/IWP - Application Overview.md",
-    "Application/Digipos/DIGIPOS - Application Overview.md",
-    "News & Updates/News - Perubahan pada request drop bill TopUp dan Mepro.md",
-    "metadata/Templates/SOP.md",
-    "Application/Digipos/DIGPOS - Query.md",
-    "Application/Digipos/SOP/DIGIPOS - SOP - Update data FMC MWA.md",
-    "Application/Digipos/SOP/DIGIPOS - SOP- Reproses DO & DOD.md",
-    "News & Updates/News- DO & DOD ISP Preload.md",
-    "Application/DSC/DSC Mobile/SOP/DSC - SOP - Resend Ebill.md",
-    "Daily/Shift 1.md",
     "Application/DSC/DSC Mobile/SOP",
-    "Application/Digipos/Issue Handling/DIGIPOS - Issue - Tidak Bisa Transaksi.md",
     "Application/Digipos/Activity",
-    "metadata/Templates/News.md",
-    "Application/MEPRO/SOP/MEPRO - SOP - Request Dropbill PilotPAYU.md",
-    "To Do.md",
-    "Application/IWP/SOP/IWP - SOP - Provide Data Lead.md",
     "Application/IWP/SOP",
-    "Application/TOPUP/SOP/TOPUP- SOP - Penarikan dan pengecekan detailcode 117.md",
     "Diagram/DSC/DSC - CHO - 1.jpg",
     "Diagram/DSC",
     "Application/Digipos/Issue Handling",
@@ -252,7 +254,6 @@
     "Diagram",
     "Application/Digipos/Case Handling",
     "Application/Untitled",
-    "Daily",
     "Pasted image 20250818184613.png",
     "Pasted image 20250818184628.png"
   ]
