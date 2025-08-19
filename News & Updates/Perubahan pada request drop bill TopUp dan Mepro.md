@@ -10,8 +10,8 @@ applications:
 shifts:
   - shift 1
 related_sop:
-  - "[[TOPUP - Penarikan dan pengecekan detailcode 117]]"
-  - "[[MEPRO - Request dropbill pilot PAYU]]"
+  - "[[TopUp - Penarikan dan pengecekan detailcode 117]]"
+  - "[[MEPRO - Request Dropbill PilotPAYU]]"
 date: 2025-07-03
 ---
 **Summary:** Perubahan body email untuk request dropbill topup  dan mepro

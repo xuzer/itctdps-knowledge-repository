@@ -10,18 +10,31 @@
           {
             "id": "156748ad7ccadb15",
             "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "e384d4efc8f312ae",
+            "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/Shift 1.md",
-                "mode": "source",
+                "file": "Application/Digipos/Activity/DIGIPOS - Activity - Housekeeping.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Shift 1"
+              "title": "DIGIPOS - Activity - Housekeeping"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -33,7 +46,6 @@
       {
         "id": "f948a555d65df15a",
         "type": "tabs",
-        "dimension": 63.535353535353536,
         "children": [
           {
             "id": "1812933b7fb4429f",
@@ -76,27 +88,10 @@
             }
           }
         ]
-      },
-      {
-        "id": "a46cf1812fc77f32",
-        "type": "tabs",
-        "dimension": 36.464646464646464,
-        "children": [
-          {
-            "id": "845f8fda3e8b1eb1",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 237.51103591918945
   },
   "right": {
     "id": "7b26e70e93479e25",
@@ -113,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/Shift 1.md",
+                "file": "Application/Digipos/Activity/DIGIPOS - Activity - Housekeeping.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Shift 1"
+              "title": "Backlinks for DIGIPOS - Activity - Housekeeping"
             }
           },
           {
@@ -132,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/Shift 1.md",
+                "file": "Application/Digipos/Activity/DIGIPOS - Activity - Housekeeping.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Shift 1"
+              "title": "Outgoing links from DIGIPOS - Activity - Housekeeping"
             }
           },
           {
@@ -161,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/Shift 1.md",
+                "file": "Application/Digipos/Activity/DIGIPOS - Activity - Housekeeping.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Shift 1"
+              "title": "Outline of DIGIPOS - Activity - Housekeeping"
             }
           },
           {
@@ -217,47 +212,48 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "156748ad7ccadb15",
+  "active": "e384d4efc8f312ae",
   "lastOpenFiles": [
-    "metadata/Template/Daily.md",
     "Daily/Shift 1.md",
+    "Application/Digipos/Activity/DIGIPOS - Activity - Housekeeping.md",
+    "Application/Digipos/Issue Handling/DIGIPOS - Issue - Tidak Bisa Transaksi.md",
+    "Application/Digipos/Activity",
+    "Application/Digipos/DIGPOS - Query.md",
     "metadata/Template/News.md",
+    "Application/MEPRO/SOP/MEPRO - Request Dropbill PilotPAYU.md",
+    "To Do.md",
+    "metadata/Template/Daily.md",
+    "Application/IWP/SOP/IWP - SOP - Provide Data Lead.md",
+    "Application/IWP/SOP",
+    "Application/Digipos/SOP/DIGIPOS - Update data FMC MWA.md",
+    "Application/Digipos/SOP/DIGIPOS - Reproses DO & DOD.md",
+    "metadata/Template/SOP.md",
+    "Application/TOPUP/SOP/TopUp - Penarikan dan pengecekan detailcode 117.md",
+    "Application/TOPUP/TopUp - QUERY.md",
+    "Application/Digipos/Case Handling/DIGIPOS - BAU - DO Number Tidak Terload.md",
+    "News & Updates/Perubahan query jika import value rasio menggunakan varchar.md",
+    "News & Updates/DO & DOD ISP Preload.md",
     "Diagram/DSC/DSC - CHO - 1.jpg",
     "Diagram/DSC",
-    "To Do.md",
     "metadata/Dashboard.md",
-    "Application/Digipos/Case Handling/DIGIPOS - BAU - DO Number Tidak Terload.md",
-    "Application/Digipos/Issue Handling/DIGIPOS - Issue - Tidak Bisa Transaksi.md",
-    "Application/Digipos/DIGPOS - Query.md",
     "Application/Digipos/Issue Handling",
-    "Application/Digipos/SOP/DIGIPOS - Reproses DO & DOD.md",
-    "Application/Digipos/SOP/DIGIPOS - Update data FMC MWA.md",
-    "News & Updates/DO & DOD SOP Preload.md",
     "News & Updates/Kendala insert table Target KPI Agency.md",
     "Untitled",
     "Diagram/DSC/DSC - CHO - 2.jpg",
     "Diagram/DSC/DSC - CHO - 3.jpg",
     "Diagram",
     "Application/Digipos/Case Handling",
-    "metadata/Template/SOP.md",
     "Application/Untitled",
     "Application/Digipos/Untitled.md",
-    "News & Updates/Perubahan query jika import value rasio menggunakan varchar.md",
     "Daily",
     "News & Updates/Perubahan pada request drop bill TopUp dan Mepro.md",
     "2025-07-03.md",
-    "Application/TOPUP/SOP/TOPUP - Penarikan dan pengecekan detailcode 117.md",
-    "Application/MEPRO/SOP/MEPRO - Request dropbill pilot PAYU.md",
     "Application/MEPRO/MEPRO.md",
     "metadata/Template",
     "Untitled.canvas",
-    "Application/TOPUP/SOP",
-    "Application/MEPRO/SOP",
     "News & Updates/2025-08-19 - Body email terbaru untuk email dropbill Topup & MERPO.md",
     "News & Updates/2025-08-17 - Pengecekan cronjob.md",
     "2025-08-19.md",
-    "Daily Activities/Shift 1.md",
-    "SOP/MEA/Sanity Test MEA.md",
     "Pasted image 20250818184613.png",
     "Pasted image 20250818184628.png"
   ]

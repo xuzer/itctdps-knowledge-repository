@@ -6,7 +6,9 @@ application:
   - DIGIPOS
 ---
 **URL:**
-**Notes:** Untuk reproses DO & DOD memiliki unique constraint sehingga tidak akan mengalami double do.
+
+#### Notes
+* Untuk reproses DO & DOD memiliki unique constraint sehingga tidak akan mengalami double do.
 
 **Reproses DO**
 * file yang belum diproses harus ada di directory `/data/l2/deliveryorder/stock-parser`

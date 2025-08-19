@@ -42,8 +42,10 @@ UNION ALL
 SELECT 'DOD' as status, do_number , count(*) qty, item_code, block_from, block_to, company_code
 FROM DGPOS.DELIVERY_ORDER_DETAIL
 group by do_number, item_code, block_from, block_to, company_code) A
-WHERE A.do_number in ('DO-322000RG-202508-0089',
-'DO-322000RG-202508-0090')
+WHERE A.do_number in (
+'DO-322000RG-202508-0089',
+'DO-322000RG-202508-0090'
+)
 GROUP BY do_number, item_code, block_from, block_to, company_code
 order by do_number;
 ```
@@ -64,7 +66,7 @@ WHERE created_at BETWEEN
       AND TO_TIMESTAMP('2025-08-10 23:59:59', 'YYYY-MM-DD HH24:MI:SS')
 GROUP BY to_char (created_at , 'YYYY-MM-DD')
 ORDER BY to_char (created_at , 'YYYY-MM-DD') ASC;
-```
+``` 
 ##### Cek Trend Regular Recharge
 ```sql
 SELECT 
