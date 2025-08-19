@@ -1,8 +1,24 @@
+##### Insert Flagging Success RS
+```sql
+Insert into Reseller_Registration ( TRANSACTION_ID, REG_TYPE, OUTLET_ID, KTP, KTP_IMAGE, SELFIE_KTP_IMAGE, OUTLET_NAME, ADDRESS, CITY, POSTAL_CODE, NPWP, EMAIL, NO_HP_OWNER, NO_RS, CREATED_AT, CREATED_BY, UPDATED_AT, UPDATED_BY, KTP_NAME, ADDRESS_OUTLET, STATUS, STATUS_DESC, PAYMENT_METHOD, OPERATOR_STATUS, OPERATOR_STATUS_DESC, OPERATOR_REF_ID, PIN_STATUS, PIN_STATUS_DESC, PIN_REF_ID, ONBOARDING_TYPE, CHANNEL ) values ( 'DGPS240620151302536441210-FIN', 'ONBOARDING', '2501013635', '8120e90ikir93ff5acb6ea6e74e8fb9430d35435cb99ae0bb5a1fab8b051f89cef680', 'onboarding/rsIdCard.jpeg', 'onboarding/rsIdCard.jpeg', '6281295747771 - DHD CELL', 'adb68c6pjkc2088d7d909d694f8715820287c7764e044df074abe6480485d20bb6f1acddaed4cb6fe7bf3cee17a9469b35f754359589f7a0728ce130d48f371262f640df1b7fdd33f26bfd3df121b7d99718be5dc017a87253766858752fafdfd8d08', 'BOGOR', '42264', '7519463ky1rq99f21f97844bc7291b5837b01987d6ac9dc5d6cc8e073628134d805ad', '286d9978ws206b035c611b4ca92eff3f1d16200953b0cca2b1f76a268478ee79ca9fc', '81295747771', '81295747771', sysdate, NULL, sysdate, NULL, 'DHD CELL', 'Kp Sawah Barat DS Labuan RT/RW  003/012 kec. labuan Kab Pandeglang- Banten 42264', 'APPROVED', 'Process service request successfully.', 'FINPAY', 'SUCCESS', NULL, NULL, NULL, NULL, NULL, NULL, NULL );
+```
+##### Insert POI NPSN
+```sql
+INSERT INTO poi_npsn VALUES('10264164','MTSN KARO','0','KABANJAHE','KARO','PEMATANGSIANTAR','SUMBAGUT','SUMATERA','98.504732','3.104779');
+```
+##### Update POI NPSN
+```sql
+UPDATE POI_NPSN SET LATITUDE = '-2.935244’', LONGITUDE ='104.775820' WHERE npsn = '10603735';
+```
+##### Cek NPSN 
+```sql
+select * from POI_NPS where NPSN = ''
+```
 ##### Rollback KYC
 ```sql
 UPDATE reseller registration set status='FAILED' where outlet_id='1201119737' AND payment_method='FINPAY';
 ```
-##### Cari user KYC By RS
+##### Cari KYC By RS
 ```sql
 select * from reseller_registration where outlet_id in (select outlet_id from rs_outlet where rs_number='82235073136' and enabled='1');
 ```

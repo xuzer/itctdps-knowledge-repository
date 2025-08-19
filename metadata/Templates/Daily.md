@@ -5,7 +5,8 @@
 - [ ] Check Report Email Summary Report dan Validasi TopUp-Corp. 🔁 every day 📅 2025-08-21
 - [x] Check Report Email Summary Report dan Validasi TopUp-Corp. 🔁 every day 📅 2025-08-20 ✅ 2025-08-20
 - [x] Check Cronjob 🔁 every day 📅 2025-08-19 ✅ 2025-08-19
-- [ ] Report ITCTDPS 🔁 every day 📅 2025-08-20
+- [ ] Report ITCTDPS 🔁 every day 📅 2025-08-21
+- [x] Report ITCTDPS 🔁 every day 📅 2025-08-20 ✅ 2025-08-20
 - [x] Report ITCTDPS 🔁 every day 📅 2025-08-19 ✅ 2025-08-19
 - [ ] Provide data 117 MEPRO dan TopUp 🔁 every month on the 5th, 10th, 15th, 19th and last 📅 2025-08-31
 - [ ] Provide Data Leads IWP; [[IWP - SOP - Provide Data Lead]] 🔁 every day 📅 2025-08-21

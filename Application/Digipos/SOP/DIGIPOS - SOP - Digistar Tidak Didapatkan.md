@@ -1,12 +1,12 @@
 ---
 tags:
   - sop
+  - official-sop
 aplikasi:
   - DIGIPOS
+link_sop:
 ---
-**URL:**
-
-### Notes
+### Catatan
 #### Transaksi Paket
 Dapat menggunakan query tersebut, dan dikirim ke SITTA
 ![[DIGPOS - Query#Cek Digistar Transaksi Paket]]

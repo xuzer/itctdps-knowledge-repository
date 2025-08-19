@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4783dcdb68ccd7ea",
+        "id": "f49a654daa742dc4",
         "type": "tabs",
         "children": [
           {
-            "id": "0d21c73c5266760a",
+            "id": "36675b34e890cde1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Application/Digipos/SOP/Digipos - SOP - Update Data POI DS.md",
+                "file": "Application/MEA/SOP/MEA - SOP - Retry Booked Payment.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Digipos - SOP - Update Data POI DS"
+              "title": "MEA - SOP - Retry Booked Payment"
             }
           }
         ]
@@ -33,7 +33,7 @@
       {
         "id": "f948a555d65df15a",
         "type": "tabs",
-        "dimension": 69.05965621840244,
+        "dimension": 64.14141414141415,
         "children": [
           {
             "id": "1812933b7fb4429f",
@@ -41,8 +41,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": true
+                "sortOrder": "byCreatedTime",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -72,28 +72,24 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Penanda"
+              "title": "Bookmarks"
             }
           }
         ]
       },
       {
-        "id": "1fed4fc03c0efc13",
+        "id": "78f0be3565405a92",
         "type": "tabs",
-        "dimension": 30.940343781597573,
+        "dimension": 35.858585858585855,
         "children": [
           {
-            "id": "1e9927a5712a833f",
+            "id": "0d21c73c5266760a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Application/Digipos/SOP/Digipos - SOP - Rollback proses Create RS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Digipos - SOP - Rollback proses Create RS"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -221,46 +217,46 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "1812933b7fb4429f",
+  "active": "36675b34e890cde1",
   "lastOpenFiles": [
-    "Daily Notes/2025-08-20.md",
-    "Application/Digipos/SOP/Digipos - SOP - Update Data POI DS.md",
-    "Application/Digipos/SOP/Digipos - SOP - Rollback proses Create RS.md",
-    "Application/MEA/SOP/MEA - SOP - Retry Booked Payment.md",
-    "News & Updates/Not Done - News  - Terdapat update penambahan automate script yang direct ke DB pada activity aplikasi CUG Corporate, iKnow, & My Enterprise Access.md",
-    "CUG - SOP -.md",
-    "metadata/Templates/News.md",
-    "metadata/Templates/case-handling.md",
-    "metadata/Templates/Daily.md",
-    "[MEA - Query.md",
     "Application/MEA/MEA - Query.md",
-    "metadata/Templates/SOP.md",
-    "Application/Digipos/SOP/DIGIPOS - SOP - Update data FMC MWA.md",
+    "Application/MEA/SOP/MEA - SOP - Retry Booked Payment.md",
     "Application/Digipos/DIGPOS - Query.md",
-    "Application/DSC/DSC Mobile/DSC Mobile - Application Overview.md",
-    "Application/DSC/DSC Mobile/SOP/DSC - SOP - Resend Ebill.md",
-    "Application/DSC/DSC Mobile/SOP/DSC - SOP - Kendala gagal Change Ownership.md",
-    "Application/DSC/DSC Mobile/SOP/DSC -  SOP - Sanity Test DSC.md",
+    "Application/DSC/DSC - Query.md",
+    "Application/CUG/CUG - QUERY.md",
+    "Application/IWP/SOP/IWP - SOP - Provide Data Lead.md",
+    "Application/CUG/CUG - Application Overview.md",
+    "Untitled.canvas",
+    "News & Updates/News - Kendala insert table Target KPI Agency.md",
+    "Application/Digipos/SOP/Digipos - SOP - Rollback proses Create RS.md",
+    "News & Updates/News - Provide Data Support Activity Tim Bisnis Terkait Event Sampai Tanggal 21 Agustus.md",
+    "Daily Notes/2025-08-20.md",
+    "News & Updates/Not Done - News  - Terdapat update penambahan automate script yang direct ke DB pada activity aplikasi CUG Corporate, iKnow, & My Enterprise Access.md",
+    "News & Updates/News - Kenaikan kendala Change Ownership pada nomor yang memiliki child number dengan indikasi pada system terbaca predictive bill.md",
+    "Projek/Cek POI/Projek - Cek Poi.md",
+    "Daily/Crontab/Crontab - Checking.md",
     "Application/Digipos/SOP/DIGIPOS - SOP - Digistar Tidak Didapatkan.md",
+    "Application/Digipos/SOP/DIGIPOS - SOP- Transaksi E-Voucher Nomor Voucher Tidak Didapatkan.md",
     "Application/Digipos/SOP/DIGIPOS - SOP - Request Access User Adita.md",
     "Application/Digipos/SOP/DIGIPOS - SOP- Reproses DO & DOD.md",
-    "Application/Digipos/SOP/DIGIPOS - SOP- Transaksi E-Voucher Nomor Voucher Tidak Didapatkan.md",
-    "metadata/Templates/toc-sop-template.md",
+    "Application/Digipos/DIGIPOS - Application Overview.md",
+    "Application/Digipos/Issue Handling/DIGIPOS - Issue - Tidak Bisa Transaksi.md",
+    "Application/Digipos/Case Handling/DIGIPOS - BAU - DO Number Tidak Terload.md",
+    "Application/Digipos/Activity/DIGIPOS - Activity - Housekeeping.md",
+    "Daily/Crontab/Crontab - How To.md",
+    "cekpoi.exe",
+    "metadata/Templates/Projek.md",
+    "Daily/Shift 1.md",
+    "Projek/Cek POI",
     "Application/MEA/SOP",
     "Projek",
-    "Daily/Shift 1.md",
-    "Daily/Crontab/Crontab - Checking.md",
-    "Daily/Crontab/Crontab - How To.md",
     "Daily/Crontab",
     "Crontab",
     "Application/MEA",
-    "Images",
-    "Images/Pasted image 20250820010908.png",
+    "Gambar",
+    "Gambar/Pasted image 20250820010908.png",
     "Untitled.base",
     "Application/CUG",
-    "Daily Notes",
-    "Application/DSC/DSC Mobile/Case Handling",
-    "Untitled.canvas",
     "Diagram/DSC/DSC - CHO - 1.jpg",
     "Diagram/DSC/DSC - CHO - 2.jpg",
     "Diagram/DSC/DSC - CHO - 3.jpg",

@@ -7,7 +7,7 @@ aplikasi:
 link_sop: https://confluence.telkomsel.co.id/x/hLTtCw
 ---
 ### Catatan
-Gunakan query [[DIGPOS - Query#Cari user KYC By RS]] untuk mencari KYC user by RS number, lalu update menggunakan query [[DIGPOS - Query#Rollback KYC]] untuk melakukan rollback kyc user tersebut. Beberapa hal yang perlu diperhatikan adalah:
+Gunakan query [[DIGPOS - Query#Cari KYC By RS]] untuk mencari KYC user by RS number, lalu update menggunakan query [[DIGPOS - Query#Rollback KYC]] untuk melakukan rollback KYC user tersebut. Beberapa hal yang perlu diperhatikan adalah:
 * Pastikan payment method-nya sesuai
 * RS sudah sesuai dengan yang di-request
 
