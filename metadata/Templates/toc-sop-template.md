@@ -23,7 +23,7 @@
   if (!sopFiles.length) {
     tR += `*No SOP files found in \`${sopFolder}\`*`;
   } else {
-    tR += `### List SOP\n`;
+    tR += `### Daftar SOP\n`;
     for (const file of sopFiles) {
       const link = app.metadataCache.fileToLinktext(file, tp.file.path(true));
       tR += `- [[${link}]]\n`;

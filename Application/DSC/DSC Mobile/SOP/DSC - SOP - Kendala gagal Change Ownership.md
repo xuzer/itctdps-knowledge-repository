@@ -2,8 +2,9 @@
 tags:
   - sop
   - official-sop
-applications:
+aplikasi:
   - DSC
+link_sop:
 ---
 **URL:**
 

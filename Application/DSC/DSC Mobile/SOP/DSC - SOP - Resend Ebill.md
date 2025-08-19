@@ -2,8 +2,9 @@
 tags:
   - sop
   - agent-sop
-applications:
+aplikasi:
   - DSC
+link_sop:
 ---
 **URL:**
 

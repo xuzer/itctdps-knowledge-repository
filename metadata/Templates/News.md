@@ -1,11 +1,11 @@
 ---
-tags: 
-applications: 
-shifts: 
+tags:
+applications:
+shifts:
 related_sop: []
-date: 2025-07-03
+date: 2025-08-20
 ---
-**Summary:** 
-**Details:** 
+**Rangkuman:** 
+**Detail:** 
 
-**Informant:**
+**Informan:**

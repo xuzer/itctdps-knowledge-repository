@@ -1,11 +1,10 @@
 ---
 tags:
   - sop
-applications:
+aplikasi:
+link_sop:
 ---
-**URL:**
-
-### Notes
+### Catatan
 
 
 

@@ -1,13 +1,18 @@
 ---
 tags:
   - sop
-  - official-sop
 aplikasi:
   - DIGIPOS
 ---
 **URL:**
 
 ### Notes
+#### Transaksi Paket
+Dapat menggunakan query tersebut, dan dikirim ke SITTA
+![[DIGPOS - Query#Cek Digistar Transaksi Paket]]
+#### Transaksi PSB Indihome
+#### Transaksi VF
+#### Transaksi AP/ARP
 
 #### News & Update
 ```dataview

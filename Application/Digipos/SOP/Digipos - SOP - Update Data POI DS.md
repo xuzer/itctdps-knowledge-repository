@@ -4,10 +4,11 @@ tags:
   - official-sop
 aplikasi:
   - DIGIPOS
+link_sop: https://confluence.telkomsel.co.id/x/7gDTD
 ---
-**URL:**
+### Catatan
 
-### Notes
+
 
 #### News & Update
 ```dataview

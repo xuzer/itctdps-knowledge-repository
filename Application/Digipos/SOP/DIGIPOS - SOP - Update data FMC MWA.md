@@ -2,7 +2,7 @@
 tags:
   - sop
   - official-sop
-application:
+aplikasi:
   - DIGIPOS
 ---
 **URL:**

@@ -1,13 +1,16 @@
 ---
 tags:
   - sop
-  - official-sop
+  - agent-sop
 aplikasi:
   - DIGIPOS
 ---
-**URL:**
+**URL:** -
 
 ### Notes
+Dapat di-resolved dengan melampirkan kode voucher pada kolom E_VOUCHER_HRN. Dapat menggunakan query berikut 
+
+![[DIGPOS - Query#Cek Transaksi E-Voucher]]
 
 #### News & Update
 ```dataview

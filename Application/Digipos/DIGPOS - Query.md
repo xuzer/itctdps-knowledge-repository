@@ -1,3 +1,26 @@
+##### Rollback KYC
+```sql
+UPDATE reseller registration set status='FAILED' where outlet_id='1201119737' AND payment_method='FINPAY';
+```
+##### Cari user KYC By RS
+```sql
+select * from reseller_registration where outlet_id in (select outlet_id from rs_outlet where rs_number='82235073136' and enabled='1');
+```
+##### Cek Digistar Transaksi Paket
+```sql
+SELECT * FROM dgpos.package_activaton 
+WHERE 1=1
+--AND msidn IN ()
+AND ext_trx_id IN ()
+ORDER BY created_at DESC;
+```
+##### Cek Transaksi E-Voucher
+```sql
+SELECT E_VOUCHER_ID,TRANSACTION_ID, RS_NUMBER,msisdn,PAYMENT_METHOD,STATUS, STATUS_DESC,CREATED_AT,E_VOUCHER_HRN
+FROM E_VOUCHER
+WHERE MSISDN = '085102314573'
+ORDER BY CREATED_AT DESC;
+```
 ##### Suspend User Outlet
 ```sql
 UPDATE outlet set enabled='0', updated_at=sysdate,updated_by='8888' where outlet_id='3201053384';

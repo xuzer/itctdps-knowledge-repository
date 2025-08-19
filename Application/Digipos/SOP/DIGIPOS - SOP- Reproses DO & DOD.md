@@ -2,12 +2,12 @@
 tags:
   - sop
   - agent-sop
-application:
+aplikasi:
   - DIGIPOS
 ---
 **URL:**
 
-#### Notes
+#### Catatan
 * Untuk reproses DO & DOD memiliki unique constraint sehingga tidak akan mengalami double do.
 
 **Reproses DO**
