@@ -6,7 +6,7 @@ applications:
 shifts:
   - all shift
 related_sop:
-  - "[[DIGIPOS - Reproses DO & DOD]]"
+  - "[[DIGIPOS - SOP- Reproses DO & DOD]]"
 date: 2025-08-19
 ---
 **Summary:** Perubahan pengiriman file DO & DOD menjadi per jam

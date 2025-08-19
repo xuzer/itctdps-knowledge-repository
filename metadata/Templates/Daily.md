@@ -1,6 +1,7 @@
 
 ### Shift 1
 - [ ] Check Cronjob 🔁 every day 📅 2025-08-20
+- [ ] Check Report Email Summary Report dan Validasi TopUp-Corp. 🔁 every day 📅 2025-08-20
 - [x] Check Cronjob 🔁 every day 📅 2025-08-19 ✅ 2025-08-19
 - [ ] Report ITCTDPS 🔁 every day 📅 2025-08-20
 - [x] Report ITCTDPS 🔁 every day 📅 2025-08-19 ✅ 2025-08-19

@@ -4,7 +4,7 @@ tags:
 application:
   - DIGIPOS
 related_sop:
-  - "[[DIGIPOS - Reproses DO & DOD]]"
+  - "[[DIGIPOS - SOP- Reproses DO & DOD]]"
 ---
 Cek DO  & DOD apakah sudah ter-load dan sesuai menggunakan query berikut 
 
@@ -16,4 +16,4 @@ Jika ditemukan ada yang tidak sesuai atau belum ter-load silahkan cari terlebih 
 find xxxx
 ```
 
-Jika ditemukan silahkan di reproses menggunakan sop [[DIGIPOS - Reproses DO & DOD]]
+Jika ditemukan silahkan di reproses menggunakan sop [[DIGIPOS - SOP- Reproses DO & DOD]]

@@ -6,7 +6,7 @@ applications:
 shifts:
   - all shift
 related_sop:
-  - "[[DIGIPOS - Update data FMC MWA]]"
+  - "[[DIGIPOS - SOP - Update data FMC MWA]]"
 date: 2025-08-19
 ---
 **Details:** Untuk insert jika import value rasio menggunakan varchar, bisa menggunakan query itu ya, sudah confirm ke mas Syahrian

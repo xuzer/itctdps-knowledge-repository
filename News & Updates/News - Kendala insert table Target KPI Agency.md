@@ -6,7 +6,7 @@ applications:
 shifts:
   - all shift
 related_sop:
-  - "[[DIGIPOS - Update data FMC MWA]]"
+  - "[[DIGIPOS - SOP - Update data FMC MWA]]"
 date: 2025-08-19
 ---
 **Summary:** Kendala gagal insert table target agency dari table temp baru
