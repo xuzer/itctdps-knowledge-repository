@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "bdd9035f06379e31",
+        "id": "a4d9f4b547e776ff",
         "type": "tabs",
         "children": [
           {
-            "id": "d330217c279a9894",
+            "id": "8798176c8e75480a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Application/Digipos/DIGPOS - Query.md",
-                "mode": "preview",
+                "file": "Daily/Shift 1.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DIGPOS - Query"
+              "title": "Shift 1"
             }
           }
         ]
@@ -41,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -196,11 +197,18 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "d330217c279a9894",
+  "active": "4af507cf73f53818",
   "lastOpenFiles": [
+    "Application/DSC/DSC - General Knowledge.md",
+    "Daily/Shift 1.md",
+    "To Do.md",
+    "Untitled.base",
+    "metadata/Templates/Daily.md",
+    "Application/Digipos/DIGPOS - Query.md",
     "Application/Digipos/DIGIPOS - Application Overview.md",
     "Application/DSC/DSC Mobile/DSC Mobile - Application Overview.md",
     "Application/DSC/DSC Mobile/SOP/DSC - SOP - Kendala gagal Change Ownership.md",
@@ -210,25 +218,19 @@
     "Application/Digipos/Case Handling/DIGIPOS - BAU - DO Number Tidak Terload.md",
     "metadata/Templates/case-handling.md",
     "Application/Digipos/SOP/DIGIPOS - SOP - Request Access User Adita.md",
-    "Application/Digipos/DIGPOS - Query.md",
-    "Application/DSC/DSC - General Knowledge.md",
     "Application/DSC/DSC Mobile/Case Handling",
     "News & Updates/News - Request Akses BOT Adita.md",
-    "To Do.md",
-    "metadata/Templates/Daily.md",
     "metadata/Templates/SOP.md",
     "metadata/Templates/News.md",
     "News & Updates/News- DO & DOD ISP Preload.md",
     "Application/Digipos/SOP/DIGIPOS - SOP- Reproses DO & DOD.md",
     "Application/Digipos/SOP/DIGIPOS - SOP - Update data FMC MWA.md",
-    "Daily/Shift 1.md",
     "Application/Digipos/Activity/DIGIPOS - Activity - Housekeeping.md",
     "Application/MEPRO/MEPRO - Application Overview.md",
     "Untitled.canvas",
     "Application/TOPUP/TopUp - Application Overview.md",
     "metadata/Templates/toc-sop-template.md",
     "Application/TOPUP/TopUp - QUERY.md",
-    "Application/IWP/IWP - Application Overview.md",
     "Application/DSC/DSC Mobile/SOP",
     "Application/Digipos/Activity",
     "Application/IWP/SOP",
@@ -240,7 +242,6 @@
     "Diagram/DSC/DSC - CHO - 3.jpg",
     "Diagram",
     "Application/Digipos/Case Handling",
-    "Application/Untitled",
     "Pasted image 20250818184613.png",
     "Pasted image 20250818184628.png"
   ]
