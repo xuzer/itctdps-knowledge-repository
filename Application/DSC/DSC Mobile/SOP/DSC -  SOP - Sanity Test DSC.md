@@ -5,6 +5,7 @@ tags:
 aplikasi:
   - DSC
 link_sop:
+status: Belum Dikerjakan
 ---
 **URL:**
 

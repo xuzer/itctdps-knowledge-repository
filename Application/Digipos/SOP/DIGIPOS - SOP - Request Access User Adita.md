@@ -4,6 +4,8 @@ tags:
   - official-sop
 aplikasi:
   - DIGIPOS
+aliases:
+  - Belum Dikerjakan
 ---
 **URL:**
 

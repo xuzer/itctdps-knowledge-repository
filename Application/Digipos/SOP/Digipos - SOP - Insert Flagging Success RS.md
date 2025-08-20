@@ -5,6 +5,7 @@ tags:
 aplikasi:
   - DIGIPOS
 link_sop: https://confluence.telkomsel.co.id/x/W7TtCw
+status: Belum Dikerjakan
 ---
 ### Catatan
 

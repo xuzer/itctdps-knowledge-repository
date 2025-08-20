@@ -4,6 +4,7 @@ tags:
   - agent-sop
 aplikasi:
   - DIGIPOS
+status: Selesai
 ---
 **URL:** -
 

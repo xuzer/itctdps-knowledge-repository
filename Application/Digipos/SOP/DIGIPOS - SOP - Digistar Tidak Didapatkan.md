@@ -5,6 +5,7 @@ tags:
 aplikasi:
   - DIGIPOS
 link_sop:
+status: Belum Dikerjakan
 ---
 ### Catatan
 #### Transaksi Paket

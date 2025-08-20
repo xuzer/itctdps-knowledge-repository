@@ -4,8 +4,10 @@ tags:
   - official-sop
 applications:
   - TOPUP
+link_sop:
+status: Belum Dikerjakan
 ---
-**URL:**
+
 **Subject Email Report:** Diskusi Case Topup Corp 27 Feb 2024
 Contoh body email: 
 ```

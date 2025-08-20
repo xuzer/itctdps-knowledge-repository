@@ -4,6 +4,8 @@ tags:
   - official-sop
 aplikasi:
   - DIGIPOS
+link_sop:
+status: Belum Dikerjakan
 ---
 **URL:**
 
