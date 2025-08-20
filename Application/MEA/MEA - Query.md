@@ -1,3 +1,7 @@
+##### Cek History Change Ownership
+```sql
+select id, transaction_id, action, transaction_message, transaction_date from change_ownership_history where change_ownership_id in (select id from change_ownership where order_id = '');
+```
 ##### Cek Ordering File
 ```sql
 SELECT * FROM ordering_file 

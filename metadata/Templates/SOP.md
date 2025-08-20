@@ -3,6 +3,7 @@ tags:
   - sop
 aplikasi:
 link_sop:
+status: Selesai, Sedang Dikerjakan, Belum DIkerjakan
 ---
 ### Catatan
 

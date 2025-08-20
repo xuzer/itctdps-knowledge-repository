@@ -5,6 +5,7 @@ tags:
 aplikasi:
   - MEA
 link_sop: https://confluence.telkomsel.co.id/x/xITwC
+status: Selesai
 ---
 	### Catatan
 Terdapat dua cara untuk melakukan retry booked payment
