@@ -1,7 +1,8 @@
 
 ### Shift 1
 - [ ] Check Cronjob 🔁 every day 📅 2025-08-21
-- [ ] Buat handover 📅 2025-08-20 🔁 every day 
+- [ ] Buat handover 🔁 every day 📅 2025-08-21
+- [x] Buat handover 🔁 every day 📅 2025-08-20 ✅ 2025-08-20
 - [x] Check Cronjob 🔁 every day 📅 2025-08-20 ✅ 2025-08-20
 - [ ] Check Report Email Summary Report dan Validasi TopUp-Corp. 🔁 every day 📅 2025-08-21
 - [x] Check Report Email Summary Report dan Validasi TopUp-Corp. 🔁 every day 📅 2025-08-20 ✅ 2025-08-20

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "Daily/Shift 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO"
+              "title": "Shift 1"
             }
           }
         ]
@@ -219,8 +219,12 @@
   },
   "active": "36675b34e890cde1",
   "lastOpenFiles": [
-    "Application/MEPRO/SOP/MEPRO - SOP - Request Dropbill PilotPAYU.md",
+    "Projek/Cek Crontab/Projek - Cek Crontab.md",
+    "Daily/Shift 1.md",
+    "Projek/Cek Crontab",
+    "Projek/Cek Crontab.md",
     "TODO.md",
+    "Application/MEPRO/SOP/MEPRO - SOP - Request Dropbill PilotPAYU.md",
     "Application/DSC/DSC Mobile/SOP/DSC -  SOP - Sanity Test DSC.md",
     "Application/Digipos/SOP/Digipos - SOP - Update Data POI DS.md",
     "Application/Digipos/SOP/DIGIPOS - SOP - Update data FMC MWA.md",
@@ -237,15 +241,12 @@
     "Gambar/Pasted image 20250820070328.png",
     "Application/MEA/SOP/MEA - SOP - Retry Order CHO.md",
     "Application/MEA/MEA - Query.md",
-    "Daily/Shift 1.md",
     "metadata/Templates/Daily.md",
     "metadata/Templates/Projek.md",
     "Application/MEA/SOP/MEA - SOP - Retry Booked Payment.md",
     "metadata/Templates/toc-sop-template.md",
     "Application/MEA/MEA - Application Overview.md",
     "Application/Digipos/DIGPOS - Query.md",
-    "Application/DSC/DSC - Query.md",
-    "Application/CUG/CUG - QUERY.md",
     "Untitled.canvas",
     "cekpoi.exe",
     "Projek/Cek POI",
@@ -257,7 +258,6 @@
     "Gambar",
     "Gambar/Pasted image 20250820010908.png",
     "Untitled.base",
-    "Application/CUG",
     "Diagram/DSC/DSC - CHO - 1.jpg",
     "Diagram/DSC/DSC - CHO - 2.jpg",
     "Diagram/DSC/DSC - CHO - 3.jpg",
