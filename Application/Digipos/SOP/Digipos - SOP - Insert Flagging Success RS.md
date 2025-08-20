@@ -5,14 +5,13 @@ tags:
 aplikasi:
   - DIGIPOS
 link_sop: https://confluence.telkomsel.co.id/x/W7TtCw
-status: Belum Dikerjakan
+status: Selesai
 ---
 ### Catatan
 
 Sebelum melakukan insert mohon pastikan bahwa ORG pada setiap payment method-nya sudah sukses
 
 Gunakan query berikut untuk melakukan pengecekan apakah sudah ada di table `reseller_registration`
-
 ![[DIGPOS - Query#Cari KYC By RS]]
 
 Jika sudah ada dapat dilakukan insert menggunakan query
