@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f49a654daa742dc4",
+        "id": "84087326dfecf5f5",
         "type": "tabs",
         "children": [
           {
-            "id": "36675b34e890cde1",
+            "id": "66fd96012f823881",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Application/Digipos/SOP/Digipos - SOP - Rollback proses Create RS.md",
+                "file": "Daily Notes/2025-08-20.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Digipos - SOP - Rollback proses Create RS"
+              "title": "2025-08-20"
             }
           }
         ]
@@ -86,10 +86,14 @@
             "id": "0d21c73c5266760a",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Daily Notes/2025-08-21.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-08-21"
             }
           }
         ]
@@ -217,51 +221,54 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "36675b34e890cde1",
+  "active": "0d21c73c5266760a",
   "lastOpenFiles": [
-    "TODO.md",
-    "Application/Digipos/SOP/Digipos - SOP - Insert Flagging Success RS.md",
-    "Daily/Shift 1.md",
-    "Projek/Cek Crontab/Projek - Cek Crontab.md",
-    "Projek/Cek Crontab",
-    "Projek/Cek Crontab.md",
-    "Application/MEPRO/SOP/MEPRO - SOP - Request Dropbill PilotPAYU.md",
-    "Application/DSC/DSC Mobile/SOP/DSC -  SOP - Sanity Test DSC.md",
-    "Application/Digipos/SOP/Digipos - SOP - Update Data POI DS.md",
-    "Application/Digipos/SOP/DIGIPOS - SOP - Update data FMC MWA.md",
-    "Application/Digipos/SOP/Digipos - SOP - Rollback proses Create RS.md",
-    "Application/Digipos/SOP/DIGIPOS - SOP - Request Access User Adita.md",
-    "Application/Digipos/SOP/DIGIPOS - SOP - Digistar Tidak Didapatkan.md",
-    "Application/Digipos/SOP/DIGIPOS - SOP- Reproses DO & DOD.md",
-    "Application/Digipos/SOP/DIGIPOS - SOP- Transaksi E-Voucher Nomor Voucher Tidak Didapatkan.md",
-    "Application/TOPUP/SOP/TOPUP- SOP - Penarikan dan pengecekan detailcode 117.md",
-    "News & Updates/News - Kenaikan kendala Change Ownership pada nomor yang memiliki child number dengan indikasi pada system terbaca predictive bill.md",
-    "Application/MEA/SOP/MEA - SOP - Kendala Change Ownership.md",
-    "metadata/Templates/SOP.md",
-    "Gambar/Pasted image 20250820070328.png",
-    "Application/MEA/SOP/MEA - SOP - Retry Order CHO.md",
-    "Application/MEA/MEA - Query.md",
-    "metadata/Templates/Daily.md",
-    "metadata/Templates/Projek.md",
-    "Application/MEA/SOP/MEA - SOP - Retry Booked Payment.md",
-    "metadata/Templates/toc-sop-template.md",
-    "Application/MEA/MEA - Application Overview.md",
+    "Daily Notes/2025-08-20.md",
+    "Daily Notes/2025-08-21.md",
+    "Application/B2B ME/B2B MyEnterprise - Application Overview.md",
+    "Application/B2B ME/B2B MyEnterprise- Query.md",
+    "News & Updates/News - Perubahan pada request drop bill TopUp dan Mepro.md",
+    "Application/CUG/CUG - Application Overview.md",
+    "Application/CUG/CUG - QUERY.md",
+    "Application/Digipos/DIGIPOS - Application Overview.md",
     "Application/Digipos/DIGPOS - Query.md",
+    "Application/Digipos/Activity/DIGIPOS - Activity - Housekeeping.md",
+    "Application/Digipos/Issue Handling/DIGIPOS - Issue - Tidak Bisa Transaksi.md",
+    "Application/Digipos/Case Handling/DIGIPOS - BAU - DO Number Tidak Terload.md",
+    "Application/Digipos/Case Handling/DIGIPOS - BAU - Open Close Menu PSB Indihome.md",
+    "Application/Digipos/SOP/DIGIPOS - SOP - Open Menu WNA Prepaid Registration.md",
+    "Application/Digipos/SOP/DIGIPOS - SOP- Reproses DO & DOD.md",
+    "Application/Digipos/SOP/DIGIPOS - SOP - Update data FMC MWA.md",
+    "Application/Digipos/SOP/DIGIPOS - SOP - Request Access User Adita.md",
+    "Application/Digipos/SOP/DIGIPOS - SOP- Transaksi E-Voucher Nomor Voucher Tidak Didapatkan.md",
+    "Application/Digipos/SOP/DIGIPOS - SOP - Digistar Tidak Didapatkan.md",
+    "Application/Digipos/SOP/Digipos - SOP - Rollback proses Create RS.md",
+    "Application/Digipos/SOP/Digipos - SOP - Update Data POI DS.md",
+    "Application/Digipos/SOP/Digipos - SOP - Insert Flagging Success RS.md",
+    "TODO.md",
+    "Projek/Cek POI/Projek - Cek Poi.md",
+    "metadata/Templates/case-handling.md",
+    "Daily/Shift 1.md",
+    "Attachment/Pasted image 20250821062906.png",
+    "Attachment/Pasted image 20250821062718.png",
+    "Attachment/Pasted image 20250821062716.png",
+    "Application/B2B ME/SOP",
+    "Application/Msight Dashboard/SOP",
+    "Attachment/Pasted image 20250821061318.png",
+    "Attachment/Pasted image 20250821061305.png",
+    "Application/Msight Dashboard",
+    "Application/B2B ME",
+    "Attachment/Pasted image 20250821030157.png",
+    "Attachment/Pasted image 20250821030153.png",
+    "Attachment/Pasted image 20250821025958.png",
+    "Attachment/Pasted image 20250821025933.png",
+    "Application/DSC/DSC FMC/Case Handling",
+    "Application/DSC/DSC FMC",
+    "Projek/Cek Crontab",
+    "Attachment/Pasted image 20250820070328.png",
     "Untitled.canvas",
     "cekpoi.exe",
     "Projek/Cek POI",
-    "Application/MEA/SOP",
-    "Projek",
-    "Daily/Crontab",
-    "Crontab",
-    "Application/MEA",
-    "Gambar",
-    "Gambar/Pasted image 20250820010908.png",
-    "Untitled.base",
-    "Diagram/DSC/DSC - CHO - 1.jpg",
-    "Diagram/DSC/DSC - CHO - 2.jpg",
-    "Diagram/DSC/DSC - CHO - 3.jpg",
-    "Pasted image 20250818184613.png",
-    "Pasted image 20250818184628.png"
+    "Application/MEA/SOP"
   ]
 }

@@ -1,8 +1,11 @@
 ---
 tags:
   - sop
+  - official-sop
 aplikasi:
-link_sop:
+  - Msight Dashboard
+link_sop: https://confluence.telkomsel.co.id/x/ULpQCw
+status: Selesai
 ---
 ### Catatan
 

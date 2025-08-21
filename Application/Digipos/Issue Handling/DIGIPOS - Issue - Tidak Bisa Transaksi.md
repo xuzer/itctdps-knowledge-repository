@@ -1,6 +1,7 @@
 ---
 tags:
   - issue-handling
+  - digipos
 application:
   - DIGIPOS
 ---

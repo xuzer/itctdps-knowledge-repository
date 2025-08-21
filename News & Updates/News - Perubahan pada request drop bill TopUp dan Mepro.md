@@ -3,7 +3,6 @@ tags:
   - news
   - mepro
   - topup
-  - dropbill
 applications:
   - MEPRO
   - TOPUP

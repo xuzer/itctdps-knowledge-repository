@@ -2,5 +2,6 @@
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "livePreview": true,
-  "propertiesInDocument": "visible"
+  "propertiesInDocument": "visible",
+  "attachmentFolderPath": "Attachment"
 }

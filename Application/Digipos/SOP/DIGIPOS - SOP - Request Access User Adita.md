@@ -2,6 +2,7 @@
 tags:
   - sop
   - official-sop
+  - digipos
 aplikasi:
   - DIGIPOS
 aliases:

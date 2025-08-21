@@ -2,6 +2,7 @@
 tags:
   - sop
   - agent-sop
+  - digipos
 aplikasi:
   - DIGIPOS
 status: Selesai

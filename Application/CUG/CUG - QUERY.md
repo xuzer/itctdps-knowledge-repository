@@ -1,3 +1,9 @@
+---
+tags:
+  - query
+  - cug
+---
+
 ##### Cek gagal Renewal
 ```sql
 SELECT trx.* 

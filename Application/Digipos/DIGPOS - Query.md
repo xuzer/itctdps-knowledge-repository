@@ -1,3 +1,25 @@
+---
+tags:
+  - digipos
+  - query
+---
+
+##### Open Menu DIGIPOS Per Outlet
+```sql
+INSERT INTO APP_MENU_OUTLET_WL SELECT '' AS MENU_ID, OUTLET_TYPE_ID,OUTLET_ID FROM OUTLET WHERE OUTLET_ID IN ('');
+```
+##### Provide data Recharge
+###### Dealer code | Month | payment type (LinkAja/Finpay/NGRS) | package type (Regular/VAS) | trx | revenue
+```sql
+SELECT c.company_name, c.dealer_code, to_char(a.created_at, 'YYYY-MM') "MONTH",a.payment_method,a.type_trx, count(*) trx, sum(a.price) revenue FROM DGPOS.v_all_trx a
+inner join (select user_id,company_id from "USER" where role_id = '204') b on a.created_by = b.user_id
+inner JOIN (select distinct company_name, dealer_code, COMPANY_ID from DGPOS.COMPANY) C ON B.COMPANY_ID = C.COMPANY_ID 
+WHERE a.created_at BETWEEN TO_DATE('20250401 00:00:00', 'YYYYMMDD HH24:MI:SS') AND TO_DATE('20250731 23:59:59', 'YYYYMMDD HH24:MI:SS')
+and a.type_trx in ('Recharge Request','Package Activation')
+and a.status in ('SUKSES','SUCCESS')
+group by c.company_name, c.dealer_code, to_char(a.created_at, 'YYYY-MM'),a.payment_method,a.type_trx
+order by to_char(a.created_at, 'YYYY-MM') , count(*) desc;
+```
 ##### Insert Flagging Success RS
 ```sql
 Insert into Reseller_Registration ( TRANSACTION_ID, REG_TYPE, OUTLET_ID, KTP, KTP_IMAGE, SELFIE_KTP_IMAGE, OUTLET_NAME, ADDRESS, CITY, POSTAL_CODE, NPWP, EMAIL, NO_HP_OWNER, NO_RS, CREATED_AT, CREATED_BY, UPDATED_AT, UPDATED_BY, KTP_NAME, ADDRESS_OUTLET, STATUS, STATUS_DESC, PAYMENT_METHOD, OPERATOR_STATUS, OPERATOR_STATUS_DESC, OPERATOR_REF_ID, PIN_STATUS, PIN_STATUS_DESC, PIN_REF_ID, ONBOARDING_TYPE, CHANNEL ) values ( 'DGPS240620151302536441210-FIN', 'ONBOARDING', '2501013635', '8120e90ikir93ff5acb6ea6e74e8fb9430d35435cb99ae0bb5a1fab8b051f89cef680', 'onboarding/rsIdCard.jpeg', 'onboarding/rsIdCard.jpeg', '6281295747771 - DHD CELL', 'adb68c6pjkc2088d7d909d694f8715820287c7764e044df074abe6480485d20bb6f1acddaed4cb6fe7bf3cee17a9469b35f754359589f7a0728ce130d48f371262f640df1b7fdd33f26bfd3df121b7d99718be5dc017a87253766858752fafdfd8d08', 'BOGOR', '42264', '7519463ky1rq99f21f97844bc7291b5837b01987d6ac9dc5d6cc8e073628134d805ad', '286d9978ws206b035c611b4ca92eff3f1d16200953b0cca2b1f76a268478ee79ca9fc', '81295747771', '81295747771', sysdate, NULL, sysdate, NULL, 'DHD CELL', 'Kp Sawah Barat DS Labuan RT/RW  003/012 kec. labuan Kab Pandeglang- Banten 42264', 'APPROVED', 'Process service request successfully.', 'FINPAY', 'SUCCESS', NULL, NULL, NULL, NULL, NULL, NULL, NULL );
@@ -32,7 +54,7 @@ ORDER BY created_at DESC;
 ```
 ##### Cek Transaksi E-Voucher
 ```sql
-SELECT E_VOUCHER_ID,TRANSACTION_ID, RS_NUMBER,msisdn,PAYMENT_METHOD,STATUS, STATUS_DESC,CREATED_AT,E_VOUCHER_HRN
+SELECT E_VOUCHER_ID,TRANSACTION_ID, RS_NUMBER,msisdn,PAYMENT_METHOD,STATUS, STATUS_DESC,CREATED_AT,E_VOUCHER_HRN, PRODUCT_ID, PRODUCT_NAME
 FROM E_VOUCHER
 WHERE MSISDN = '085102314573'
 ORDER BY CREATED_AT DESC;
