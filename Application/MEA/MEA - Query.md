@@ -17,7 +17,7 @@ select * from booked_payment where payment_code = 'BP0002240000857';
 ```
 ##### Cek History Booked Payment
 ```sql
-SELECT * FROM  automatic_execute_payment_history WHERE book_payment_id in ('BP0002240000857');
+SELECT * FROM automatic_execute_payment_history WHERE book_payment_id in ('BP0002240000857');
 ```
 ##### Retry Booked Payment
 ```sql

@@ -1,6 +1,9 @@
 ---
 tags:
   - news
+  - cug
+  - iKnow
+  - MEA
 applications:
   - CUG
   - iKnow

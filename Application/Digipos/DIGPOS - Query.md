@@ -3,7 +3,90 @@ tags:
   - digipos
   - query
 ---
+##### Summary Rekon
+```sql
+select
+TO_CHAR(created_at, 'YYYY-MM-DD') AS CREATED_AT,TYPE_TRX,status,count(status) as jumlah_transaksi,sum(price) AS PRICE 
+--count (price)
+from(
+    SELECT digicore_trx_id AS trx_id, status, created_at,UPDATED_BY,'RECHARGE' as TYPE_TRX,price,updated_at FROM DGPOS.recharge_request
+    where created_at > trunc(sysdate-1)
+    UNION ALL
+    SELECT ext_trx_id AS trx_id, status, created_at,UPDATED_BY,'PHYSICAL_VOUCHER' as TYPE_TRX,price,updated_at FROM DGPOS.physical_voucher
+    where created_at > trunc(sysdate-1)
+    UNION ALL
+    SELECT ext_trx_id AS trx_id, status, created_at,UPDATED_BY,'PACKAGE_ACTIVATION' as TYPE_TRX,price,updated_at FROM DGPOS.package_activation
+    where created_at > trunc(sysdate-1)
+    UNION ALL
+    select distinct a.trx_id AS trx_id, a.status status, b.created_at created_at,a.UPDATED_BY UPDATED_BY, TRX_TYPE AS TYPE_TRX,price price,a.updated_at updated_at
+    from dgpos.arp_request_detail A left join dgpos.arp_request B on A.REQUEST_ID=B.REQUEST_ID
+    where a.created_at > trunc(sysdate-2)
+)  where 
+--updated_at > trunc(sysdate)  and 
+--updated_at > sysdate -(8/24) 
+--created_at BETWEEN to_date('20241231 00:00:00', 'rrrrmmdd hh24:mi:ss') and to_date ('20241231 23:59:59', 'rrrrmmdd hh24:mi:ss') 
+updated_by='OP-SYS' 
+group by TO_CHAR(created_at, 'YYYY-MM-DD'),status,TYPE_TRX
+order by 1,2;
+```
+##### Get Recon VAS Already Success
+```sql
+select a.*,(now_time-trx_time)*24*60 res_time, 'Package Activation' TYPE_TRX, 'GAGAL' UPDATE_STATUS, 'Already Success' REASON from(
+SELECT ACTIVATION_ID,OUTLET_ID,RS_NUMBER, MSISDN,STATUS,STATUS_DESC,CREATED_AT,EXT_TRX_ID,PRICE,PAYMENT_METHOD,to_date(TO_CHAR(CREATED_AT, 'YYYY/MM/DD HH24:MI:SS'),'YYYY/MM/DD HH24:MI:SS')trx_time 
+,to_date(TO_CHAR(SYSDATE, 'YYYY/MM/DD HH24:MI:SS'),'YYYY/MM/DD HH24:MI:SS')now_time
+    FROM DGPOS.package_activation
+        WHERE ext_trx_id IN (
+                SELECT ext_trx_id
+                    FROM dgpos.package_activation PA
+                        WHERE ext_trx_id IN (
+                                SELECT ext_trx_id FROM dgpos.package_activation
+                                where STATUS in ('DIPROSES','INIT')
+                                and created_at > trunc(sysdate -1) --and created_at < sysdate -(6/24) AND ext_trx_id = PA.ext_trx_id
+                        )
+                        AND STATUS in  ('SUKSES','SUCCESS')
+        ) AND STATUS in ('DIPROSES','INIT')
+ORDER BY CREATED_AT DESC) a;
 
+```
+##### Get TRX VAS INIT, DIPROSES
+```sql
+SELECT * FROM(
+select a.*,(now_time-trx_time)*24*60 res_time, 'Package Activation' TYPE_TRX from(
+select ACTIVATION_ID,OUTLET_ID,RS_NUMBER, MSISDN,STATUS,STATUS_DESC,CREATED_AT,EXT_TRX_ID,PRICE,PAYMENT_METHOD,to_date(TO_CHAR(CREATED_AT, 'YYYY/MM/DD HH24:MI:SS'),'YYYY/MM/DD HH24:MI:SS')trx_time 
+,to_date(TO_CHAR(SYSDATE, 'YYYY/MM/DD HH24:MI:SS'),'YYYY/MM/DD HH24:MI:SS')now_time
+from  DGPOS.PACKAGE_ACTIVATION
+where created_at > trunc(sysdate -1)  --and created_at < sysdate -(6/24)
+and status  in ('DIPROSES','INIT')
+and status_desc is null
+--and trx_type not like '%BYU%'
+--and ext_trx_id not in ()
+order by created_at desc
+)a) WHERE res_time > 5;
+```
+##### Cek Summary Transksi Paket/VAS
+```sql
+select CR_DATE,SUM(TOTAL_VAS) TOTAL_VAS, SUM(TOTAL_VAS_SUKSES) SUKSES_VAS, SUM(TOTAL_VAS_GAGAL) GAGAL_VAS, SUM(TOTAL_VAS_INIT) VAS_INIT, SUM(TOTAL_VAS_DIPROSES) VAS_DIPROSES
+FROM
+(
+select CR_DATE,
+       CASE WHEN STATUS = 'SUKSES' and  trx_type not like '%BYU%'  THEN COUNT(STATUS) END TOTAL_VAS_SUKSES,
+       CASE WHEN STATUS = 'GAGAL' and  trx_type not like '%BYU%'  THEN COUNT(STATUS) END TOTAL_VAS_GAGAL,
+       CASE WHEN STATUS = 'INIT' and status_desc is null ---and  trx_type not like '%BYU%' 
+       THEN COUNT(STATUS) END TOTAL_VAS_INIT,
+       CASE WHEN STATUS = 'DIPROSES' and status_desc is null ---and trx_type not like '%BYU%' 
+       THEN COUNT(STATUS) END TOTAL_VAS_DIPROSES,
+       COUNT(STATUS) TOTAL_VAS
+FROM
+(
+select to_char(CREATED_AT,'YYYY-MM-DD') CR_DATE, OUTLET_ID,MSISDN,STATUS,EXT_TRX_ID,status_desc,trx_type
+from dgpos.Package_activation
+where created_at > to_date('20250821 00:00:00','rrrrmmdd HH24:MI:SS') --and to_date('20231020 23:59:59','rrrrmmdd HH24:MI:SS')
+)
+group by CR_DATE,STATUS,status_desc,trx_type
+)
+group by CR_DATE
+order by CR_DATE;
+```
 ##### Open Menu DIGIPOS Per Outlet
 ```sql
 INSERT INTO APP_MENU_OUTLET_WL SELECT '' AS MENU_ID, OUTLET_TYPE_ID,OUTLET_ID FROM OUTLET WHERE OUTLET_ID IN ('');

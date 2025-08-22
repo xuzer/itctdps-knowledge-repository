@@ -1,6 +1,7 @@
 ---
 tags:
   - news
+  - MSight
 applications:
   - Msight Dashboard
 shifts:

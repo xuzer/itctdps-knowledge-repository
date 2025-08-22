@@ -2,6 +2,7 @@
 tags:
   - sop
   - agent-sop
+  - dsc-mobile
 aplikasi:
   - DSC
 link_sop:

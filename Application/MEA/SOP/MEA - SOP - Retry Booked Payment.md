@@ -2,6 +2,7 @@
 tags:
   - sop
   - official-sop
+  - MEA
 aplikasi:
   - MEA
 link_sop: https://confluence.telkomsel.co.id/x/xITwC
@@ -19,11 +20,21 @@ Lokasi script: /home/apps/l2_utils/script/book-payment-mevo-retry
 runner script: index.js
 
 #### Manual Step
-Gunakan query [[MEA - Query#Cek Booked Payment]] dan pastikan BP nya ada. Jika data tidak ada bisa di FU ke L2 atau info-kan ke requestor bahwa datanya tidak ada.
+Gunakan query dibawah dan pastikan BP nya ada. Jika data tidak ada bisa di FU ke L2 atau info-kan ke requestor bahwa datanya tidak ada.
 
-Jika datanya ada dan statusnya Failed. Lakukan pengecekan history payment-nya dengan query [[MEA - Query#Cek History Booked Payment]]. Perhatikan pada kolom `transaction_message` pastikan pesannya adalah `ESB Error: 504 Gateway Time-out` untuk pesan lainnya dapat di-koordinasi-kan terlebih dahulu dengan L2 dan tim Finnet apakah dapat dilakukan retry.
+![[MEA - Query#Cek Booked Payment]]
 
-Jika dipastikan bisa di-retry gunakan query [[MEA - Query#Retry Booked Payment]]. Silahkan cek secara berkala transaksi-nya hingga statusnya berubah menjadi sukses/failed. Jika failed dapat dicek kembali history payment-nya.
+Jika datanya ada dan statusnya Failed. Lakukan pengecekan history payment-nya dengan query:
+
+![[MEA - Query#Cek History Booked Payment]]
+
+Perhatikan pada kolom `transaction_message` pastikan pesannya adalah `ESB Error: 504 Gateway Time-out` untuk pesan lainnya dapat di-koordinasi-kan terlebih dahulu dengan L2 dan tim Finnet apakah dapat dilakukan retry.
+
+Jika dipastikan bisa di-retry gunakan query
+
+![[MEA - Query#Retry Booked Payment]]
+
+Silahkan cek secara berkala transaksi-nya hingga statusnya berubah menjadi sukses/failed. Jika failed dapat dicek kembali history payment-nya.
 
 #### News & Update
 ```dataview

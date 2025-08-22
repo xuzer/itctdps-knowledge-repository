@@ -1,7 +1,7 @@
 ---
 tags:
   - query
-  - B2BMyEnterprise
+  - MyEnterprise
 ---
 
 ## Report Weekly

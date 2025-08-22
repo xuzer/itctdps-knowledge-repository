@@ -2,8 +2,9 @@
 tags:
   - sop
   - official-sop
+  - MyEnterprise
 aplikasi:
-  - B2B MyEnterprise
+  - MyEnterprise
 link_sop: https://confluence.telkomsel.co.id/x/f4EhCg
 ---
 ### Catatan
@@ -12,7 +13,7 @@ Database Access: b2bchannelpapp1
 Database Access Quota Pooling : b2bchannelpapp7
 
 **QUERY**
-![[B2B MyEnterprise- Query#Report Weekly]]
+![[MyEnterprise- Query#Report Weekly]]
 
 
 #### News & Update

@@ -2,6 +2,7 @@
 tags:
   - sop
   - official-sop
+  - dsc-mobile
 aplikasi:
   - DSC
 link_sop:
