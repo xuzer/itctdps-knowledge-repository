@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "79edcb97f175a00d",
+        "id": "7e6b9f7b2a14fe8a",
         "type": "tabs",
         "children": [
           {
-            "id": "1dd21e4107d2d3b9",
+            "id": "ccb7f3330c736edc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Application/MEA/SOP/MEA - SOP - Kendala Change Ownership.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "MEA - SOP - Kendala Change Ownership"
             }
           }
         ]
@@ -79,38 +83,24 @@
         "dimension": 44.64646464646464,
         "children": [
           {
-            "id": "66fd96012f823881",
+            "id": "1dd21e4107d2d3b9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily Notes/2025-08-22.md",
+                "file": "Daily Notes/2025-08-25.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-08-22"
-            }
-          },
-          {
-            "id": "a6aad65319d8447b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Daily Notes/2025-08-22.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-08-22"
+              "title": "2025-08-25"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 331.5
+    "width": 314.5
   },
   "right": {
     "id": "7b26e70e93479e25",
@@ -231,12 +221,27 @@
       "daily-notes:Open today's daily note": false
     }
   },
-  "active": "1dd21e4107d2d3b9",
+  "active": "ccb7f3330c736edc",
   "lastOpenFiles": [
-    "Application/Digipos/SOP/DIGIPOS - SOP - Recon VAS.md",
-    "Daily Notes/2025-08-22.md",
-    "Application/Digipos/SOP/DIGIPOS - SOP - Recon VF.md",
+    "Application/MEA/SOP/MEA - SOP - Retry Booked Payment.md",
+    "Application/MEA/MEA - Query.md",
+    "Application/MEA/SOP/MEA - SOP - Kendala Change Ownership.md",
+    "Application/MEA/SOP/MEA - SOP - Retry Order CHO.md",
+    "Daily Notes/2025-08-25.md",
+    "2025-08-25.md",
+    "Attachment/Pasted image 20250825073738.png",
+    "Application/MEA/SOP/MEA - SOP - Mass Activation Full Product.md",
+    "metadata/Templates/Daily.md",
+    "Application/Digipos/SOP/DIGIPOS - SOP - Export data FMC MWA.md",
+    "News & Updates/News - Request Penarikan List Tugas Completed DIGIPOS.md",
     "Application/Digipos/DIGPOS - Query.md",
+    "Daily/Crontab/Crontab - Checking.md",
+    "Daily/Crontab/Crontab - How To.md",
+    "Daily/Shift 1.md",
+    "Daily Notes/2025-08-21.md",
+    "Daily Notes/2025-08-22.md",
+    "Application/Digipos/SOP/DIGIPOS - SOP - Recon VAS.md",
+    "Application/Digipos/SOP/DIGIPOS - SOP - Recon VF.md",
     "Application/Digipos/SOP/DIGIPOS - SOP - Open Menu WNA Prepaid Registration.md",
     "Attachment/REKON_VAS_20250821.xlsx",
     "Application/DSC/DSC - General Knowledge.md",
@@ -246,20 +251,7 @@
     "2025-08-22.md",
     "Application/DSC/DSC FMC/Case Handling/DSC FMC - Case Handling - Pengecekan Order Stuck Pending Appointment Creation.md",
     "Application/DSC/DSC Mobile/Case Handling/DSC - Case Handling - Kendala Gagal Change Ownership.md",
-    "Daily Notes/2025-08-21.md",
-    "Application/DSC/DSC - Query.md",
-    "Application/DSC/DSC Mobile/DSC Mobile - Splunk Query.md",
-    "Application/DSC/DSC Mobile/DSC Mobile - Application Overview.md",
-    "Application/DSC/DSC Mobile/SOP/DSC - SOP - Resend Ebill.md",
-    "Application/DSC/DSC Mobile/SOP/DSC - SOP - Kendala gagal Change Ownership.md",
-    "Application/DSC/DSC Mobile/SOP/DSC -  SOP - Sanity Test DSC.md",
-    "Application/Digipos/SOP/Digipos - SOP - Update Data POI DS.md",
-    "Application/Digipos/SOP/Digipos - SOP - Insert Flagging Success RS.md",
     "Attachment/Rekon_VF_INIT_Diproses_20250818.xlsx",
-    "Application/Digipos/Issue Handling/DIGIPOS - Issue - Tidak Bisa Transaksi.md",
-    "Application/Digipos/Digipos - Splunk Query.md",
-    "Application/MEA/SOP/MEA - SOP - Retry Booked Payment.md",
-    "Application/MEA/MEA - Query.md",
     "Attachment/Pasted image 20250821062906.png",
     "Attachment/Pasted image 20250821062718.png",
     "Attachment/Pasted image 20250821062716.png",
@@ -276,7 +268,6 @@
     "Application/DSC/DSC FMC/Case Handling",
     "Application/DSC/DSC FMC",
     "Projek/Cek Crontab",
-    "Attachment/Pasted image 20250820070328.png",
     "Untitled.canvas",
     "cekpoi.exe"
   ]

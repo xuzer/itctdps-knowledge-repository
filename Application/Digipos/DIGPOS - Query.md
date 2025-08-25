@@ -3,6 +3,74 @@ tags:
   - digipos
   - query
 ---
+##### Export List Tugas For Daily 
+```sql
+SELECT DISTINCT
+    ps.SCHEDULE_ID AS "TUGAS ID",
+    ps.NAME AS "TUGAS NAME",
+    dj.JOURNEY_DATE AS "TUGAS DATE",
+    tm.AREA_NAME AS "AREA",
+    tm.REGIONAL AS "REGION",
+    tm.BRANCH AS "BRANCH",
+    dj.WOK AS "WOK",
+    u.CODE AS "USER CODE",
+    u.NAME AS "USER NAME",
+    spv.CODE as "SUPERVISOR CODE",
+    spv.NAME as "SUPERVISOR NAME",
+    ps.SCHEDULE_CATEGORY AS "SCHEDULE CATEGORY",
+    dj.STATUS AS "STATUS",
+    dj.CHECK_IN AS "CHECKIN",
+    dj.CHECK_OUT AS "CHECKOUT",
+    ps.LATITUDE AS "LATITUDE",
+    ps.LONGITUDE AS "LONGITUDE",
+    ps.ODP AS "ODP",
+    djff.ODP_CONDITION AS "ODP CONDITION",
+    djff.ODP_CONDITION_DESC AS "ODP CONDITION DESC",
+    djff.NUMBER_HOUSE_AROUND AS "NUMBER HOUSE AROUND",
+    djff.PROSPECT_ESTIMATE AS "PROSPECT ESTIMATE",
+    djff.FEEDBACK_LOCATION AS "FEEDBACK LOCATION",
+    djff.NUMBER_COMPETITOR AS "NUMBER COMPETITOR",
+    djff.FEEDBACK_COMPETITOR AS "FEEDBACK COMPETITOR",
+    djff.NOTES AS "NOTES",
+    (
+        SELECT
+            LISTAGG (b.COMPETITOR_DESC, ', ') WITHIN GROUP (
+                ORDER BY
+                    b.COMPETITOR_DESC
+            )
+        FROM
+            dgpos.DSI_JOURNEY_FMC_FB_COMP b
+        WHERE
+            b.JOURNEY_ID = djff.JOURNEY_ID
+    ) AS "COMPETITOR",
+    (
+        SELECT
+            LISTAGG (
+                '[' c.NAME '-' c.PHONE_NUMBER '-' c.ADDRESS ']',
+                ', '
+            ) WITHIN GROUP (
+                ORDER BY
+                    c.NAME
+            )
+        FROM
+            dgpos.DSI_JOURNEY_FMC_FB_PROSPECT c
+        WHERE
+            c.JOURNEY_ID = djff.JOURNEY_ID
+    ) AS "PROSPECT"
+FROM
+    dgpos.DSI_JOURNEY dj
+    JOIN dgpos.POI_SCHEDULE ps ON ps.SCHEDULE_ID = dj.SCHEDULE_ID
+    JOIN dgpos."USER" u ON u.USER_ID = dj.USER_ID
+    LEFT JOIN dgpos.USER_DSI ud ON ud.USER_ID = dj.USER_ID
+    LEFT JOIN dgpos."USER" spv ON spv.USER_ID = ud.SUPERVISOR_ID
+    LEFT JOIN dgpos.TERRITORY_MAPPING tm ON tm.BRANCH_ID = dj.BRANCH_ID
+    LEFT JOIN dgpos.DSI_JOURNEY_FMC_FEEDBACK djff ON djff.JOURNEY_ID = dj.JOURNEY_ID
+WHERE
+    dj.STATUS IN ('APPROVED', 'REJECTED')
+    AND dj.JOURNEY_TYPE = 'POI'
+    AND dj.JOURNEY_DATE >= TO_DATE ('01-08-2025', 'DD-MM-YYYY')
+    AND dj.JOURNEY_DATE <= TO_DATE ('24-08-2025', 'DD-MM-YYYY');
+```
 ##### Summary Rekon
 ```sql
 select

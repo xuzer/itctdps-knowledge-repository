@@ -1,3 +1,12 @@
+
+## 2025-08-25
+```
+TopupCorp Enable (+1)
+DSC Disable (+2)
+iKnow Disable(-1) Enable (+2)
+MEPRO Disable (+6) Enable (+4)
+MEA Disable (+2) Enable(+3)
+```
 ## 2025-08-20
 ### TopUp
 topupcorpapp2:
