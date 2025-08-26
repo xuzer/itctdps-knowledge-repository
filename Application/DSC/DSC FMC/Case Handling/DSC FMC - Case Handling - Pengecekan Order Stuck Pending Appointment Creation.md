@@ -12,7 +12,10 @@ Gunakan query untuk melakukan pengecekan slot notification
 Untuk melakukan penarikan data bisa menggunakan command berikut 
 
 ```sh
-mysql -u dsc -h 10.59.102.140 -P 3340 -p'Bebas#2018' dsc --batch -e "SELECT * FROM slot_notification WHERE order_id IN ('AOi4250820070024082983e00', 'AOi4250820061042761d23750');" > /tmp/cek_slot.csv
+mysql -u dsc -h 10.59.102.140 -P 3340 -p'Bebas#2018' dsc 
+--batch --raw 
+-e "SELECT * FROM slot_notification WHERE order_id IN ('');" 
+| sed 's/\t/|/g' > /tmp/cek_slot_pipe.csv
 ```
 
 Cek pada bagian status. Perhatikan status dengan value **`pending`** atau **`waiting`** transaksi id nya bisa diambil dan lakukan pada pengecekan log submit appointment creation menggunakan query Splunk di bawah. *Step query di atas bersifat optional, semua order id bisa langsung digunakan untuk pengecekan di Splunk*

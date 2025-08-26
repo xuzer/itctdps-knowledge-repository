@@ -3,73 +3,73 @@ tags:
   - digipos
   - query
 ---
+##### Export Data All Sales
+```sql
+select
+  psr.TRANSACTION_ID, psr.COMPANY_ID,psr.BRANCH_ID,psr.PERIOD,psr.TRANSACTION_DATE,psr.ORDER_TRANSACTION_ID,psr.USER_CODE,psr.NAME,psr.SUPERVISOR_CODE,psr.SUPERVISOR_NAME,psr.INTERNET_NUMBER,psr.APPS,  psr.STATUS,psr.CALLBACK_DATE,psr.WOK,psr.MARKETING_FEE_H2,psr.REPORT_CATEGORY,
+  psrt.TYPE,psrt.PRICE,psrt.BUNDLE_NAME as PACKAGE_NAME,psrt.SALES_FEE_H2,psrt.PRODUCT_INDEX,
+  bi.branch_index
+from psb_sales_report psr
+join psb_sales_report_type psrt on psr.transaction_id = psrt.transaction_id
+JOIN branch_index bi on psr.branch_id = bi.branch_id
+where psr.period = TO_DATE(:p_year || '-' || :p_month, 'yyyy-MM')
+AND psr.REPORT_CATEGORY = 'SF';
+```
+
+```
+BU request export list tugas status pending January 2025 => set period = January 2025 (H-0 month)
+```
+
+##### Insert To Temp Target KPI Agency
+```sql
+INSERT INTO TEMP_INSERT_TARGET_REKON(PERIOD, COMPANY_ID, BRANCH, WOK, USER_TYPE, TARGET_IH, TARGET_ARPU, TARGET_ORBIT, TARGET_CROSS_SELL, TARGET_NEW_SF, TARGET_SF,MIN_TARGET_HEALTHY_3,TARGET_HEALTHY_3, MIN_TARGET_HEALTHY_4, TARGET_HEALTHY_4,MIN_TARGET_HEALTHY_5, TARGET_HEALTHY_5)
+SELECT
+to_date('01-08-2025', 'dd-MM-yyyy') period, –- H-0 Month Request (jangan sampai salah period; H-0 bulan)** 
+    company_id,                         -- id_wok
+    branch,
+    wok,
+    'SF' user_type,                     --SF / TBG
+    ROUND(TARGET_SALES_PRODUK_UTAMA),   --Target Sales
+    null,                       --Target Average Price
+    ROUND(TARGET_ORBIT),
+    ROUND(TARGET_CROSS_SELL_UPSELL),
+    ROUND(TARGET_NEW_SF_WITH_PS),--Target new SF Productivity
+    null,               --Target exsiting SF Productivity
+    ROUND(MIN_RATIO_HEALTHY_3,4),--Nilai Harus desimal dibawah 1
+    ROUND(TARGET_RATIO_HEALTHY_3,4),--Nilai Harus desimal dibawah 1 ROUND(MIN_RATIO_HEALTHY_4,4), --Nilai Harus desimal dibawah 1
+    ROUND(TARGET_RATIO_HEALTHY_4,4), --Nilai Harus desimal dibawah 1
+    ROUND(MIN_RATIO_HEALTHY_5,4), --Nilai Harus desimal dibawah 1
+    ROUND(TARGET_RATIO_HEALTHY_5,4)--Nilai Harus desimal dibawah 1
+FROM table_baru;
+```
+
 ##### Export List Tugas For Daily 
 ```sql
 SELECT DISTINCT
-    ps.SCHEDULE_ID AS "TUGAS ID",
-    ps.NAME AS "TUGAS NAME",
-    dj.JOURNEY_DATE AS "TUGAS DATE",
-    tm.AREA_NAME AS "AREA",
-    tm.REGIONAL AS "REGION",
-    tm.BRANCH AS "BRANCH",
-    dj.WOK AS "WOK",
-    u.CODE AS "USER CODE",
-    u.NAME AS "USER NAME",
-    spv.CODE as "SUPERVISOR CODE",
-    spv.NAME as "SUPERVISOR NAME",
-    ps.SCHEDULE_CATEGORY AS "SCHEDULE CATEGORY",
-    dj.STATUS AS "STATUS",
-    dj.CHECK_IN AS "CHECKIN",
-    dj.CHECK_OUT AS "CHECKOUT",
-    ps.LATITUDE AS "LATITUDE",
-    ps.LONGITUDE AS "LONGITUDE",
-    ps.ODP AS "ODP",
-    djff.ODP_CONDITION AS "ODP CONDITION",
-    djff.ODP_CONDITION_DESC AS "ODP CONDITION DESC",
-    djff.NUMBER_HOUSE_AROUND AS "NUMBER HOUSE AROUND",
-    djff.PROSPECT_ESTIMATE AS "PROSPECT ESTIMATE",
-    djff.FEEDBACK_LOCATION AS "FEEDBACK LOCATION",
-    djff.NUMBER_COMPETITOR AS "NUMBER COMPETITOR",
-    djff.FEEDBACK_COMPETITOR AS "FEEDBACK COMPETITOR",
-    djff.NOTES AS "NOTES",
-    (
-        SELECT
-            LISTAGG (b.COMPETITOR_DESC, ', ') WITHIN GROUP (
-                ORDER BY
-                    b.COMPETITOR_DESC
-            )
-        FROM
-            dgpos.DSI_JOURNEY_FMC_FB_COMP b
-        WHERE
-            b.JOURNEY_ID = djff.JOURNEY_ID
-    ) AS "COMPETITOR",
-    (
-        SELECT
-            LISTAGG (
-                '[' c.NAME '-' c.PHONE_NUMBER '-' c.ADDRESS ']',
-                ', '
-            ) WITHIN GROUP (
-                ORDER BY
-                    c.NAME
-            )
-        FROM
-            dgpos.DSI_JOURNEY_FMC_FB_PROSPECT c
-        WHERE
-            c.JOURNEY_ID = djff.JOURNEY_ID
-    ) AS "PROSPECT"
-FROM
-    dgpos.DSI_JOURNEY dj
-    JOIN dgpos.POI_SCHEDULE ps ON ps.SCHEDULE_ID = dj.SCHEDULE_ID
-    JOIN dgpos."USER" u ON u.USER_ID = dj.USER_ID
-    LEFT JOIN dgpos.USER_DSI ud ON ud.USER_ID = dj.USER_ID
-    LEFT JOIN dgpos."USER" spv ON spv.USER_ID = ud.SUPERVISOR_ID
-    LEFT JOIN dgpos.TERRITORY_MAPPING tm ON tm.BRANCH_ID = dj.BRANCH_ID
-    LEFT JOIN dgpos.DSI_JOURNEY_FMC_FEEDBACK djff ON djff.JOURNEY_ID = dj.JOURNEY_ID
-WHERE
-    dj.STATUS IN ('APPROVED', 'REJECTED')
-    AND dj.JOURNEY_TYPE = 'POI'
-    AND dj.JOURNEY_DATE >= TO_DATE ('01-08-2025', 'DD-MM-YYYY')
-    AND dj.JOURNEY_DATE <= TO_DATE ('24-08-2025', 'DD-MM-YYYY');
+  ps.SCHEDULE_ID AS "TUGAS ID", ps.NAME AS "TUGAS NAME", dj.JOURNEY_DATE AS "TUGAS DATE",
+  tm.AREA_NAME AS "AREA", tm.REGIONAL AS "REGION", tm.BRANCH AS "BRANCH", dj.WOK AS "WOK",
+  u.CODE AS "USER CODE", u.NAME AS "USER NAME", spv.CODE AS "SUPERVISOR CODE", spv.NAME AS "SUPERVISOR NAME",
+  ps.SCHEDULE_CATEGORY AS "SCHEDULE CATEGORY", dj.STATUS AS "STATUS", dj.CHECK_IN AS "CHECKIN", dj.CHECK_OUT AS "CHECKOUT",
+  ps.LATITUDE AS "LATITUDE", ps.LONGITUDE AS "LONGITUDE", ps.ODP AS "ODP",
+  djff.ODP_CONDITION AS "ODP CONDITION", djff.ODP_CONDITION_DESC AS "ODP CONDITION DESC",
+  djff.NUMBER_HOUSE_AROUND AS "NUMBER HOUSE AROUND", djff.PROSPECT_ESTIMATE AS "PROSPECT ESTIMATE",
+  djff.FEEDBACK_LOCATION AS "FEEDBACK LOCATION", djff.NUMBER_COMPETITOR AS "NUMBER COMPETITOR",
+  djff.FEEDBACK_COMPETITOR AS "FEEDBACK COMPETITOR", djff.NOTES AS "NOTES",
+  (SELECT LISTAGG(b.COMPETITOR_DESC, ', ') WITHIN GROUP (ORDER BY b.COMPETITOR_DESC)
+   FROM dgpos.DSI_JOURNEY_FMC_FB_COMP b WHERE b.JOURNEY_ID = djff.JOURNEY_ID) AS "COMPETITOR",
+  (SELECT LISTAGG('[' || c.NAME || '-' || c.PHONE_NUMBER || '-' || c.ADDRESS || ']', ', ')
+   WITHIN GROUP (ORDER BY c.NAME) FROM dgpos.DSI_JOURNEY_FMC_FB_PROSPECT c
+   WHERE c.JOURNEY_ID = djff.JOURNEY_ID) AS "PROSPECT"
+FROM dgpos.DSI_JOURNEY dj
+JOIN dgpos.POI_SCHEDULE ps ON ps.SCHEDULE_ID = dj.SCHEDULE_ID
+JOIN dgpos."USER" u ON u.USER_ID = dj.USER_ID
+LEFT JOIN dgpos.USER_DSI ud ON ud.USER_ID = dj.USER_ID
+LEFT JOIN dgpos."USER" spv ON spv.USER_ID = ud.SUPERVISOR_ID
+LEFT JOIN dgpos.TERRITORY_MAPPING tm ON tm.BRANCH_ID = dj.BRANCH_ID
+LEFT JOIN dgpos.DSI_JOURNEY_FMC_FEEDBACK djff ON djff.JOURNEY_ID = dj.JOURNEY_ID
+WHERE dj.STATUS IN ('APPROVED', 'REJECTED') AND dj.JOURNEY_TYPE = 'POI'
+  AND dj.JOURNEY_DATE BETWEEN TO_DATE('01-08-2025','DD-MM-YYYY') AND TO_DATE('25-08-2025','DD-MM-YYYY')
+ORDER BY dj.JOURNEY_DATE DESC;
 ```
 ##### Summary Rekon
 ```sql
