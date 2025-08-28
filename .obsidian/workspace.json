@@ -4,40 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "f3d1ec1434c969be",
+        "id": "32a339f4f6f3c08b",
         "type": "tabs",
         "children": [
           {
-            "id": "87497a4772839103",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "Application/Digipos/SOP/DIGIPOS - SOP - Export data FMC MWA.md",
-                "bFile": "Application/Digipos/SOP/DIGIPOS - SOP - Export data FMC MWA.md",
-                "aRef": "HEAD",
-                "bRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: DIGIPOS - SOP - Export data FMC MWA"
-            }
-          },
-          {
-            "id": "fefda4c68bc13efb",
+            "id": "d33f7f2e092cbebc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
+                "file": "Application/Digipos/SOP/Digipos - SOP - Insert Flagging Success RS.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "title": "Digipos - SOP - Insert Flagging Success RS"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -49,7 +33,6 @@
       {
         "id": "f948a555d65df15a",
         "type": "tabs",
-        "dimension": 55.35353535353536,
         "children": [
           {
             "id": "1812933b7fb4429f",
@@ -94,22 +77,21 @@
         ]
       },
       {
-        "id": "45cf201910a8164a",
+        "id": "0184e25bc446f311",
         "type": "tabs",
-        "dimension": 44.64646464646464,
         "children": [
           {
-            "id": "1dd21e4107d2d3b9",
+            "id": "abc8b1d8e20b0c97",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily Notes/2025-08-25.md",
-                "mode": "source",
+                "file": "Daily Notes/2025-08-28.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-08-25"
+              "title": "2025-08-28"
             }
           }
         ]
@@ -237,9 +219,21 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "fefda4c68bc13efb",
+  "active": "abc8b1d8e20b0c97",
   "lastOpenFiles": [
+    "Application/Digipos/SOP/Digipos - SOP - Insert Flagging Success RS.md",
+    "Application/Digipos/DIGPOS - Query.md",
+    "Daily/Crontab/Crontab - How To.md",
+    "Daily Notes/2025-08-28.md",
+    "Daily/Crontab/Crontab - Checking.md",
+    "Application/TOPUP/TopUp - QUERY.md",
+    "Application/Digipos/Case Handling/DIGIPOS - BAU - DO Number Tidak Terload.md",
     "Daily Notes/2025-08-27.md",
+    "Application/Digipos/SOP/Digipos - SOP - Update Data POI DS.md",
+    "Projek/Cek POI/Projek - Cek Poi.md",
+    "Application/DSC/DSC FMC/Case Handling/DSC FMC - Case Handling - Pengecekan Order Stuck Pending Appointment Creation.md",
+    "Daily Notes/2025-08-20.md",
+    "Projek/Cek Crontab/Projek - Cek Crontab.md",
     "Daily Notes/2025-08-26.md",
     "conflict-files-obsidian-git.md",
     "News & Updates/News - 2025-08-25 Update SOP Digipos.md",
@@ -255,19 +249,7 @@
     "Attachment/Pasted image 20250825073738.png",
     "Application/MEA/SOP/MEA - SOP - Mass Activation Full Product.md",
     "metadata/Templates/Daily.md",
-    "Application/Digipos/SOP/DIGIPOS - SOP - Export data FMC MWA.md",
-    "News & Updates/News - Request Penarikan List Tugas Completed DIGIPOS.md",
-    "Application/Digipos/DIGPOS - Query.md",
-    "Daily/Crontab/Crontab - Checking.md",
-    "Daily/Crontab/Crontab - How To.md",
-    "Daily/Shift 1.md",
-    "Daily Notes/2025-08-22.md",
-    "Application/Digipos/SOP/DIGIPOS - SOP - Recon VAS.md",
-    "Application/Digipos/SOP/DIGIPOS - SOP - Recon VF.md",
-    "Application/Digipos/SOP/DIGIPOS - SOP - Open Menu WNA Prepaid Registration.md",
     "Attachment/REKON_VAS_20250821.xlsx",
-    "Application/DSC/DSC - General Knowledge.md",
-    "Application/Digipos/Issue Handling/Untitled.md",
     "Attachment/Rekon_VF_INIT_Diproses_20250818.xlsx",
     "Attachment/Pasted image 20250821062906.png",
     "Attachment/Pasted image 20250821062718.png",

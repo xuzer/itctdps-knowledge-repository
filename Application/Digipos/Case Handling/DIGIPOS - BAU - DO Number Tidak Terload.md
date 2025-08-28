@@ -14,7 +14,7 @@ Cek DO  & DOD apakah sudah ter-load dan sesuai menggunakan query berikut
 Jika ditemukan ada yang tidak sesuai atau belum ter-load silahkan cari terlebih dahulu do tersebut di file menggunakan command 
 
 ```bash
-find xxxx
+find /path/to/search -name "*.gz" -exec zgrep -l "search_string" {} +
 ```
 
 Jika ditemukan silahkan di reproses menggunakan sop [[DIGIPOS - SOP- Reproses DO & DOD]]

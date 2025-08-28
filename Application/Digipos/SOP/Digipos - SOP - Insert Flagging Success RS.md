@@ -16,7 +16,7 @@ Gunakan query berikut untuk melakukan pengecekan apakah sudah ada di table `rese
 ![[DIGPOS - Query#Cari KYC By RS]]
 
 Jika sudah ada dapat dilakukan insert menggunakan query
-![[DIGPOS - Query#Insert Flagging Success RS]]
+![[DIGPOS - Query#Query Maker Insert Flagging RS]]
 
 #### News & Update
 ```dataview

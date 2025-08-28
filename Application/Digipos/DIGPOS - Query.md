@@ -3,6 +3,27 @@ tags:
   - digipos
   - query
 ---
+##### Query Maker Insert Flagging RS
+```sql
+-- RS & OPR
+select 'insert into reseller_registration (TRANSACTION_ID,REG_TYPE,OUTLET_ID,KTP,KTP_IMAGE,SELFIE_KTP_IMAGE,OUTLET_NAME,ADDRESS,CITY,POSTAL_CODE,NPWP,EMAIL,NO_HP_OWNER,NO_RS,CREATED_AT,CREATED_BY,UPDATED_AT,UPDATED_BY,KTP_NAME,ADDRESS_OUTLET,STATUS,STATUS_DESC,PAYMENT_METHOD,OPERATOR_STATUS,OPERATOR_STATUS_DESC,OPERATOR_REF_ID,PIN_STATUS,PIN_STATUS_DESC,PIN_REF_ID,ONBOARDING_TYPE,CHANNEL) values '
+||'('''||transaction_id||'-FIN'','''||REG_TYPE||''','''||OUTLET_ID||''','''||KTP||''','''||KTP_IMAGE||''','''||SELFIE_KTP_IMAGE||''','''||
+OUTLET_NAME||''','''||ADDRESS||''','''||CITY||''','''||POSTAL_CODE||''','''||NPWP||''','''||EMAIL||''','''||NO_HP_OWNER||''','''||NO_RS||''','||'sysdate'||','||'null'||','||'sysdate'||','||'null'||','''||KTP_NAME||''','''||ADDRESS_OUTLET||''','''||'APPROVED'',''Process service request successfully.'',''FINPAY'',''SUCCESS'',NULL,NULL,NULL,NULL,NULL,NULL,NULL);'
+as query
+from reseller_registration
+where outlet_id in (select outlet_id from rs_outlet where rs_number in ('82266116785') and enabled='1')
+and payment_method = 'LINKAJA' and status = 'APPROVED';
+
+--RS Only
+select 'insert into reseller_registration (TRANSACTION_ID,REG_TYPE,OUTLET_ID,KTP,KTP_IMAGE,SELFIE_KTP_IMAGE,OUTLET_NAME,ADDRESS,CITY,POSTAL_CODE,NPWP,EMAIL,NO_HP_OWNER,NO_RS,CREATED_AT,CREATED_BY,UPDATED_AT,UPDATED_BY,KTP_NAME,ADDRESS_OUTLET,STATUS,STATUS_DESC,PAYMENT_METHOD,OPERATOR_STATUS,OPERATOR_STATUS_DESC,OPERATOR_REF_ID,PIN_STATUS,PIN_STATUS_DESC,PIN_REF_ID,ONBOARDING_TYPE,CHANNEL) values '
+||'('''||transaction_id||'-FIN'','''||REG_TYPE||''','''||OUTLET_ID||''','''||KTP||''','''||KTP_IMAGE||''','''||SELFIE_KTP_IMAGE||''','''||
+OUTLET_NAME||''','''||ADDRESS||''','''||CITY||''','''||POSTAL_CODE||''','''||NPWP||''','''||EMAIL||''','''||NO_HP_OWNER||''','''||NO_RS||''','||'sysdate'||','||'null'||','||'sysdate'||','||'null'||','''||KTP_NAME||''','''||ADDRESS_OUTLET||''','''||'APPROVED'',''Process service request successfully.'',''FINPAY'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);'
+as query
+from reseller_registration
+where outlet_id in (select outlet_id from rs_outlet where rs_number in ('82266116785') and enabled='1')
+and payment_method = 'LINKAJA' and status = 'APPROVED';
+
+```
 ##### Export Data All Sales
 ```sql
 select
